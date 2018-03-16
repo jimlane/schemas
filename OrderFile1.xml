@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SAPOrder xmlns="http://www.namespace47.com/SAPOrder">
+  <OrderHeader>
+    <OrderDate>2018/03/12</OrderDate>
+    <EstimatedDeliveryDate>2018/05/01</EstimatedDeliveryDate>
+    <OrderNumber>4783</OrderNumber>
+  </OrderHeader>
+  <CustomerDetails>
+    <Name>Contoso</Name>
+    <Address>40th St Redmond</Address>
+  </CustomerDetails>
+  <OrderDetails>
+    <ItemDescription>Laptop</ItemDescription>
+    <ItemCustomerCode>31457</ItemCustomerCode>
+  </OrderDetails>
+</SAPOrder>
