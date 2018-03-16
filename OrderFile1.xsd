@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://www.namespace47.com/SAPOrder" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="https://github.com/jimlane/schemas" xmlns:xs="http://www.w3.org/1999/xsi/Transform">
   <xs:element name="SAPOrder">
     <xs:complexType>
       <xs:sequence>
