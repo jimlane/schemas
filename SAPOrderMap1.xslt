@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:o="http://www.namespace47.com/SAPOrder" version="1.0">
+<xsl:stylesheet
+	xmlns="https://github.com/jimlane/schemas"
+	xmlns:xsl="http://www.w3.org/2001/XMLSchema-instance"
+	xsl:schemaLocation="http://github.com/jimlane/schemas https://raw.githubusercontent.com/jimlane/schemas/master/OrderFile1.xsd"
+	xmlns:msxsl="urn:schemas-microsoft-com:xslt" version="1.0">
 	<msxsl:script implements-prefix="user" language="C#">
         <![CDATA[
           public string FormatCurrency(string amount)
@@ -17,10 +21,10 @@
 	<xsl:template match="/">
 		<OrderHeader>
 			<OrderDate>
-				<xsl:value-of select="user:FormatDate(@OrderHeader/OrderDate/text())" />
+				<xsl:value-of select="user:FormatDate(/OrderHeader/OrderDate/text())" />
 			</OrderDate>
 			<EstimatedDeliveryDate>
-				<xsl:value-of select="user:FormatDate(@OrderHeader/EstimatedDeliveryDate/text())" />
+				<xsl:value-of select="user:FormatDate(/OrderHeader/EstimatedDeliveryDate/text())" />
 			</EstimatedDeliveryDate>
 			<OrderNumber>
 				<xsl:value-of select="OrderHeader/OrderNumber/text()" />
